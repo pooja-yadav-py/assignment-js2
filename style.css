@@ -55,4 +55,8 @@ button{
 	outline: none;
 	box-shadow: 5px;
 	box-shadow: 5px 9px 15px gray;
+
+}
+button:hover{
+   cursor: pointer;
 }

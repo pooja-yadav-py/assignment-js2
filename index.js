@@ -1,18 +1,19 @@
     let date =new Date();
 	let hours = date.getHours();
+    console.log(hours);
 	let greeting =document.getElementById('greeting');
 
 	function showTime(){
-    if(hours>3 && hours<=12){
+    if(hours>3 && hours<12){
     	greeting.innerHTML= `Lets's start our morning with a new quotes`;
     }
-    else if(hours>12 && hours<=17){
+    else if(hours>=12 && hours<17){
     	greeting.innerHTML= `Lets's start our afternoon with a new quotes`;
     }
-    else if(hours>17 && hours<=21){
+    else if(hours>=17 && hours<21){
     	greeting.innerHTML= `Lets's start our evening with a new quotes`;
     }
-    else if(hours>21 || hours<=3){
+    else if(hours>=21 || hours<=3){
         greeting.innerHTML= `Lets's start our night with a new quotes`;
 
     }
